@@ -12,6 +12,18 @@ The user is rewarded when fruits are collected in a timely manner.
 
 Clone this repo and run in Xcode.
 
+1. Clone the repository
+git clone [https://github.com/your-username/MTD367_TMA02_July_2024_Semester_Q1.git]
+
+2. Open the project
+- Navigate to the cloned directory
+- Double-click the `Fruit_Collection_Game.xcodeproj` file to open in Xcode
+
+3. Run the simulator
+- Select your desired iOS simulator device from the scheme menu
+- Click the "Run" button (▶️) or press `Cmd + R`
+
+
 # Screenshots
 
 <img width="389" alt="Screenshot 2024-09-20 at 2 54 29 PM" src="https://github.com/user-attachments/assets/bfed49c0-d401-45c0-a981-ae490c1d87ae" />
