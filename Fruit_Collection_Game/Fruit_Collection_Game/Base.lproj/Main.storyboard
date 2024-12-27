@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UXJ-60-KT3">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GameMenuViewController" id="BYZ-38-t0r" customClass="GameMenuViewController" customModule="Fruit_Collection_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mona-eendra" translatesAutoresizingMaskIntoConstraints="NO" id="76d-2O-H1l">
+                                <rect key="frame" x="0.0" y="-54" width="393" height="960"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruit Collection Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS9-bq-wS8">
+                                <rect key="frame" x="0.0" y="69" width="393" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="uRd-KN-TdD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fruits" translatesAutoresizingMaskIntoConstraints="NO" id="Dmj-ht-x3v">
+                                <rect key="frame" x="-6" y="103" width="399" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="Wmg-X0-QRs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNd-Ao-hL0">
+                                <rect key="frame" x="16" y="653" width="361" height="63"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Game Main Screen">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6G-Gf-Fxd"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="fJg-D4-WiY">
+                                <rect key="frame" x="19" y="422" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SGJ-kN-gaZ"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fruit Drop Speed:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttg-IH-eGw">
+                                <rect key="frame" x="16" y="369" width="179" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fruit Count:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBA-5a-wPo">
+                                <rect key="frame" x="21" y="468" width="179" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70t-EY-NkF">
+                                <rect key="frame" x="132" y="468" width="179" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7V-yd-oJO">
+                                <rect key="frame" x="188" y="379" width="123" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="j8E-iI-bGV" userLabel="Fruit count slider">
+                                <rect key="frame" x="14" y="520" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="fruit_count_SliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="95B-gP-8fc"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bNd-Ao-hL0" firstAttribute="top" secondItem="Dmj-ht-x3v" secondAttribute="bottom" constant="292" id="1QA-IO-wW6"/>
+                            <constraint firstItem="QS9-bq-wS8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-34" id="7mw-rU-tuL"/>
+                            <constraint firstItem="76d-2O-H1l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AVb-vK-BIB"/>
+                            <constraint firstItem="76d-2O-H1l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5Z-zU-7oj"/>
+                            <constraint firstItem="bNd-Ao-hL0" firstAttribute="centerX" secondItem="Dmj-ht-x3v" secondAttribute="centerX" constant="3" id="e8Y-uZ-ksM"/>
+                            <constraint firstItem="76d-2O-H1l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eye-yz-1Wl"/>
+                            <constraint firstItem="76d-2O-H1l" firstAttribute="leading" secondItem="QS9-bq-wS8" secondAttribute="leading" id="klU-t6-1Js"/>
+                            <constraint firstItem="76d-2O-H1l" firstAttribute="trailing" secondItem="QS9-bq-wS8" secondAttribute="trailing" id="oLQ-Fk-uZt"/>
+                            <constraint firstItem="76d-2O-H1l" firstAttribute="leading" secondItem="Dmj-ht-x3v" secondAttribute="leading" constant="6" id="ooa-Xd-k6b"/>
+                            <constraint firstItem="Dmj-ht-x3v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sbi-O5-oAf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bNd-Ao-hL0" secondAttribute="bottom" constant="102" id="wqL-Fc-V0x"/>
+                            <constraint firstItem="76d-2O-H1l" firstAttribute="trailing" secondItem="Dmj-ht-x3v" secondAttribute="trailing" id="yB5-iu-3fR"/>
+                            <constraint firstItem="bNd-Ao-hL0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yeQ-ZW-wde"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gHf-t3-REa"/>
+                    <connections>
+                        <outlet property="Fruit_Img" destination="Dmj-ht-x3v" id="d2P-1b-LQO"/>
+                        <outlet property="StartGame" destination="bNd-Ao-hL0" id="RLx-4n-QRI"/>
+                        <outlet property="Text_Label" destination="QS9-bq-wS8" id="Xyx-tp-eXB"/>
+                        <outlet property="fruit_count_Label" destination="70t-EY-NkF" id="0b2-KE-eWX"/>
+                        <outlet property="fruit_count_Slider" destination="j8E-iI-bGV" id="fNQ-yJ-06H"/>
+                        <outlet property="fruit_drop_speed_slider" destination="fJg-D4-WiY" id="V4y-6i-iXe"/>
+                        <outlet property="slider_Label" destination="n7V-yd-oJO" id="PIU-cp-jyq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-45"/>
+        </scene>
+        <!--Game Main View Controller-->
+        <scene sceneID="SBO-TW-TZN">
+            <objects>
+                <viewController storyboardIdentifier="GameMainViewController" id="6EW-NZ-Zn7" customClass="GameMainViewController" customModule="Fruit_Collection_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HFQ-et-3KJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="Apple" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKb-gS-Qsh" userLabel="Fruit Img 1">
+                                <rect key="frame" x="25" y="69" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="Apple" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tx7-oM-77f" userLabel="Fruit Img 2">
+                                <rect key="frame" x="133" y="69" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="Apple" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q9l-QS-SvC" userLabel="Fruit Img 3">
+                                <rect key="frame" x="241" y="69" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tm-O6-TVH">
+                                <rect key="frame" x="0.0" y="643" width="405" height="209"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits Lost: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQB-2v-SNN">
+                                        <rect key="frame" x="8" y="143" width="125" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits Collected: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsm-O1-kKn">
+                                        <rect key="frame" x="8" y="98" width="245" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="245" id="CK8-6U-hoW"/>
+                                            <constraint firstAttribute="height" constant="37" id="jJu-Pt-v3y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6w-45-D5E">
+                                        <rect key="frame" x="8" y="20" width="180" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="2Fa-Gp-oxc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Pause Game">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPD-W6-FA0">
+                                        <rect key="frame" x="205" y="20" width="180" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Restart Game">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                            <color key="baseBackgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points Scored:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js2-7k-jIV">
+                                        <rect key="frame" x="214" y="98" width="183" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="T6w-45-D5E" firstAttribute="leading" secondItem="rsm-O1-kKn" secondAttribute="leading" id="1ga-Ym-MgF"/>
+                                    <constraint firstItem="lQB-2v-SNN" firstAttribute="top" secondItem="rsm-O1-kKn" secondAttribute="bottom" constant="8" id="GVX-y2-9Io"/>
+                                    <constraint firstItem="rsm-O1-kKn" firstAttribute="leading" secondItem="7Tm-O6-TVH" secondAttribute="leadingMargin" id="H0c-jm-bXV"/>
+                                    <constraint firstItem="T6w-45-D5E" firstAttribute="top" secondItem="7Tm-O6-TVH" secondAttribute="top" constant="20" id="LFY-l7-R6B"/>
+                                    <constraint firstItem="lQB-2v-SNN" firstAttribute="bottom" secondItem="7Tm-O6-TVH" secondAttribute="bottomMargin" id="WCM-Tl-zeK"/>
+                                    <constraint firstItem="rsm-O1-kKn" firstAttribute="top" secondItem="T6w-45-D5E" secondAttribute="bottom" constant="24" id="bT1-5v-D6c"/>
+                                    <constraint firstItem="lQB-2v-SNN" firstAttribute="leading" secondItem="rsm-O1-kKn" secondAttribute="leading" id="g4E-8M-5mi"/>
+                                    <constraint firstItem="rsm-O1-kKn" firstAttribute="top" secondItem="7Tm-O6-TVH" secondAttribute="top" constant="98" id="yyQ-p3-TKy"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Container" translatesAutoresizingMaskIntoConstraints="NO" id="jMD-Ee-mva">
+                                <rect key="frame" x="149" y="260" width="107" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsp-DR-59G">
+                                <rect key="frame" x="16" y="564" width="361" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Game">
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                    <color key="baseBackgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="game_start:" destination="6EW-NZ-Zn7" eventType="touchUpInside" id="xkV-oc-0C6"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="Apple" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yf5-uG-Dup" userLabel="Fruit Img 4">
+                                <rect key="frame" x="25" y="177" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RTa-Wn-tI4"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.73725490196078436" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Tm-O6-TVH" firstAttribute="leading" secondItem="RTa-Wn-tI4" secondAttribute="leading" id="42j-rX-vOZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7Tm-O6-TVH" secondAttribute="bottom" constant="-34" id="RYG-vN-FTm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Tm-O6-TVH" secondAttribute="trailing" constant="-28" id="hcf-nk-9bf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3gZ-jK-Mhe"/>
+                    <connections>
+                        <outlet property="container_Img" destination="jMD-Ee-mva" id="yii-Qy-hXr"/>
+                        <outlet property="fruit_2" destination="tx7-oM-77f" id="Kin-r5-bMc"/>
+                        <outlet property="fruit_3" destination="Q9l-QS-SvC" id="TXg-Td-d1N"/>
+                        <outlet property="fruit_4" destination="Yf5-uG-Dup" id="6BK-Xv-fl7"/>
+                        <outlet property="fruit_Img" destination="MKb-gS-Qsh" id="VNq-hB-kXV"/>
+                        <outlet property="fruits_Collected_Count" destination="rsm-O1-kKn" id="Fzq-p1-m9S"/>
+                        <outlet property="fruits_Lost_Count" destination="lQB-2v-SNN" id="yRj-Vd-tkW"/>
+                        <outlet property="pause_resume_Btn" destination="T6w-45-D5E" id="zdd-Ez-grh"/>
+                        <outlet property="points_Count" destination="Js2-7k-jIV" id="kNW-9q-iZG"/>
+                        <outlet property="restart_btn" destination="yPD-W6-FA0" id="Tic-CA-uxC"/>
+                        <outlet property="startBtn" destination="gsp-DR-59G" id="KWQ-bQ-z28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ab-iB-AB3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756.4885496183206" y="-45.070422535211272"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AGU-hi-JJE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UXJ-60-KT3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Da-V3-jb0">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="74d-8B-DPN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVv-jO-vuv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223.66412213740458" y="-45.070422535211272"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Apple" width="2400" height="1889"/>
+        <image name="Container" width="500" height="500"/>
+        <image name="Fruits" width="512" height="512"/>
+        <image name="mona-eendra" width="640" height="960"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
