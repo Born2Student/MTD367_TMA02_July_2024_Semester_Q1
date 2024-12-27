@@ -36,4 +36,10 @@ For any questions or issues, please open a GitHub issue in this repository.
 
 <img width="389" alt="Screenshot 2024-09-20 at 2 54 29 PM" src="https://github.com/user-attachments/assets/bfed49c0-d401-45c0-a981-ae490c1d87ae" />
 
-<img width="914" alt="Screenshot 2024-09-20 at 2 27 21 PM" src="https://github.com/user-attachments/assets/6d023156-cae5-4478-b53a-ef2e64b99157" />
+<img width="389" alt="Screenshot 2024-09-20 at 2 54 52 PM" src="https://github.com/user-attachments/assets/f1484a2e-4826-4ea6-ae99-05f8f89d3501" />
+
+<img width="389" alt="Screenshot 2024-09-20 at 2 54 44 PM" src="https://github.com/user-attachments/assets/57dfbb6c-787c-4bcb-802e-f0093319d8a5" />
+
+<img width="389" alt="Screenshot 2024-09-20 at 2 54 38 PM" src="https://github.com/user-attachments/assets/0c3e5526-8e1c-4530-b26a-2fefea7db3af" />
+
+
