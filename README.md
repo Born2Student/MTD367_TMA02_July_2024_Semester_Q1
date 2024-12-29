@@ -10,6 +10,9 @@ Build a simple game APP in Xcode. This is a fruit collection game, with fruits f
 
 The user is rewarded when fruits are collected in a timely manner.
 
+![Screenshot 2024-12-29 at 7 11 00 PM](https://github.com/user-attachments/assets/7bc74ed8-6205-4fe7-8683-4bbd54cc9cfa)
+![Screenshot 2024-12-29 at 7 11 10 PM](https://github.com/user-attachments/assets/6c1343ce-9818-4b78-8033-5d17dbe9fee0)
+
 # Installation
 
 Clone this repo and run in Xcode.
