@@ -2,7 +2,7 @@
 
 # MTD367 Tutor-Marked Assignment 02 (TMAO2) Question 1 - July Semester 2024
 
-## Question 1
+### Question 1
 
 Apply your knowledge learnt in Gesture Recognizers, UIViews, UIControls and Animation.
 
